@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Register::</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<link href="css/font-awesome.css" rel="stylesheet">
+<script src="function.js"></script>
+<script>
+
+</script>
+</head>
+<body>
+    <div class="topborder">
+    	    <div id="topbar">
+    	<div style="float:left;width:60%;">
+        	<ul>
+            	<li><i class="fa fa-phone"></i> +234 8037249424</li>
+                <li><i class="fa fa-envelope"></i> lucci@shopper.com</li>
+            </ul>
+        </div>
+                <div style="float:right;width:30%;text-align:right">
+               <ul>
+               	 <li><a href="index.html"><i class="fa fa-home"></i></a></li> 
+            	<li><a href="#"><i class="fa fa-lock"></i> Login</a></li>
+                <li><a href="#"><i class="fa fa-user"></i> Register</a></li>
+            </ul>
+            </div>
+            <div style="clear:both"></div>
+    		</div><!--End of topbar div-->
+    </div><!--end of topborder-->
+   
+   <!--logo and menu start here-->
+   <div class="wrapper" style="background:#ccc">
+   		<div id="header">
+        	<div><img src="img/logo.png" alt="logo"></div>
+        </div>
+        <div id="navbar">
+        	<ul class="clearfix">
+ 				<li><a href="index.html">Home</a></li>
+                <li><a href="index.html#aboutus">About<span style="font-size:11px"> &#9660;</span></a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="register.html">Account</a></li>
+                <li><a href="">Contact</a></li>
+            </ul> 
+            <div style="clear:both"></div>       
+        </div>
+           </div>
+    <div class="wrapper" style="background-color:#ccc">
+        <div id="headerimage" style="max-width:90%; margin:0 auto; padding:30px 0px ">
+        <div id="slider">
+        <figure>
+        <img src="img/digitakmarketing.png" height="310" width="">
+        <img src="img/banner3.jpg" height="310" width="">
+        <img src="img/dynamic-website.jpg" height="310" width="">
+        <img src="img/banner-branding.jpg" height="310" width="">
+        </figure></div>
+
+   </div><!--end of class wrapper-->
+   <div class="wrapper">
+   		<div id="headerimage" style="width:90%; margin:0 auto;padding:30px 0;">
+        	
+        	
+        </div>
+   </div>
+   <div class="wrapper" style="background-image:url(../website/lucci/images/bg4.jpg)">
+   		<div id="form">
+        		<ul class="group">
+                	<li><a href="#content" onClick="showlogin('register')">Sign Up</a></li>
+                    <li><a href="#content" onClick="showlogin('login')">Login</a></li>
+	            </ul>
+                <div style="clear:both"></div>
+                <a id="content"></a>
+            <div>
+        	<div id="register">
+            <h1 style="text-align:center;color:#fff;font-weight:300;margin:0 0 30px">Register Here</h1>
+            <p id="alert"></p>
+            	<form method="post" action="register.html" enctype="multipart/form-data">
+                <div class="fieldwrap" style="width:48%; float:left;">
+                <input onChange="return validate()" type="text" name="fname" id="firstname" placeholder="Firstname *">
+                </div>
+                <div class="fieldwrap" style="width:48%; float:right;">
+                <input onChange="return validate()" type="text" name="lname" id="lastname" placeholder="Lastname *">
+                </div>
+                <div style="clear:both"></div>
+                <div class="fieldwrap">
+                <label>Email</label>
+                <input type="email" name="email" id="" placeholder="Email Address *">
+                </div>
+                <div class="fieldwrap">
+                <label>Gender</label>
+                <input type="radio" name="gender" value="Male" id="">Male <input type="radio" name="gender" value="Female" id="">Female</div>
+				<div class="fieldwrap">
+                <label>Comm. Options</label>
+                <input type="checkbox" name="comm[]" value="Email" id="">Email<br>
+                <input type="checkbox" name="comm[]" value="SMS" id="">SMS<br>
+                <input type="checkbox" name="comm[]" value="call" id="">Call Nunmber
+                </div>
+                <div class="fieldwrap">
+                <label>Location</label>
+                <select name="loc" id="loc">
+                	<option value="0">Select Preferred Location</option>
+                   <option value="ikeja">Lagos Ikeja</option>]
+                    <option value="Festac">Festac</option>
+                    <option value="Ibadan">Ibadan</option>
+                </select>
+                </div>
+                 <div class="fieldwrap">
+					<label>Picture</label>
+                    <input type="file" name="pic">
+                </div>
+                <div class="fieldwrap">
+                    <input onChange="return validate()" type="password" name="pswd" placeholder="Password *" id="pass">
+                </div>
+                <div class="fieldwrap">
+                    <input onChange="return validate()" type="password" name="cfpswd" placeholder="Retype Password *" id="cfpass">
+                </div>
+                <input type="submit" value="Register" class="button" onclick="return validate();">
+
+                </form>
+            </div>
+            <div id="login" style="display:none">
+            <h1 style="text-align:center;color:#fff;font-weight:300;margin:0 0 30px">Login Here</h1>
+            	<form method="post" action="" enctype="multipart/form-data">
+                <div class="fieldwrap">
+                <input type="email" name="email" id="" placeholder="Email Address *">
+                </div>
+                <div class="fieldwrap">
+                    <input type="password" name="pswd" placeholder="Password *">
+                </div>
+                <input type="submit" value="Login" class="button">
+                </form>
+            </div>
+            </div>
+        
+        </div>
+   
+   </div>
+   
+   
+</body>
+</html>
